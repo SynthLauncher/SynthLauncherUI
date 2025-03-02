@@ -14,10 +14,14 @@ class SynthLauncher : public QMainWindow
     Q_OBJECT
 
 public:
-    SynthLauncher(QWidget *parent = nullptr);
+    explicit SynthLauncher(QWidget *parent = nullptr);
     ~SynthLauncher();
+
+private slots:
+    void onLaunchButtonClicked(); // Slot for the Launch button
 
 private:
     Ui::SynthLauncher *ui;
 };
+
 #endif // SYNTHLAUNCHER_H
